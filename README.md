@@ -10,7 +10,11 @@ For many of these utilites it may be more convenient to run the scripts from the
 This means we don't have to download the whole utility and specify the file location.
 This can be helpful so we can use the most up-to-date version, use just one or two specific scripts from the repository or when we want to specify a hard-coded location, for example when using a virtual machine.
 We'll need the raw file from GitHub to do this (or whatever server you are holding it)
-`python -c "$(curl -s https://raw.githubusercontent.com/beml201/b_utils/main/py_utils/ToCify.py?token=GHSAT0AAAAAACMNM6DQ2XPPYJ6DZSYNK7G4ZMX22O)" -s "mystring" --boolparam`
+`python -c "$(curl -s https://raw.githubusercontent.com/beml201/cli_utils2/master/scripts/map_data.py)" -s "param1" --boolparam`
 You can specify urls at the start of a bash script and call them if this is easier
-```URL="https://raw.githubusercontent.com/beml201/b_utils/main/py_utils/ToCify.py?token=GHSAT0AAAAAACMNM6DQ2XPPYJ6DZSYNK7G4ZMX22O"
-python -c "$(curl -s $URL)" -s "newstring" --boolparam```
+```
+URL="https://raw.githubusercontent.com/beml201/cli_utils2/master/scripts/map_data.py"
+python -c "$(curl -s $URL)" -s "param1" --boolparam
+```
+This also works for R scripts
+`R -e "$(curl -s $URL)" -s "param1" --boolparam
