@@ -1,0 +1,9 @@
+name: cli_utils2
+dependencies:
+  - r-base
+  - r-magrittr
+  - r-argparser
+  - r-dplyr
+  - numpy
+  - pandas
+  - scipy
