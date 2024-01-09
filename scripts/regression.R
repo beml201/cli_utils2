@@ -8,7 +8,7 @@ parser <- arg_parser(paste(
     'Phenotype data is assumed to have to form: ID Phenotype_of_interest covars',
     'Accepts tab-delimited data only',
     '', sep='\n'))
-parser %<>% add_argument('omic_file', nargs=1, help='omic file, tab-delimited (columns match the rows of the phneotype file)')
+parser %<>% add_argument('omic_file', nargs=1, help='omic file, tab-delimited (columns match the rows of the phenotype file)')
 parser %<>% add_argument('pheno_file', nargs=1, help='phenotype file, tab-delimited')
 parser %<>% add_argument('--output', nargs=1, help='file name to write out', default='regression_results.tsv')
 parser %<>% add_argument('--logistic', help='flag to run a logistic regression instead of linear', flag=TRUE)

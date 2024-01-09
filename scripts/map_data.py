@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(
                         'Python script to map a column of a given file to columns based on a given alternate file',
                         'Ignores missing values'
                     ]))
-parser.add_argument('file', help='file to mapcolumn data to')
+parser.add_argument('file', help='file to map column data to')
 parser.add_argument('dict', help='file containing the old and new names for the column')
 parser.add_argument('--output', '-o', default='mapped_file', help='name of the output file')
 parser.add_argument('--file-delim', '-fd', default='\t', help='delimiter of the file')

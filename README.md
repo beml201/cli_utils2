@@ -18,3 +18,8 @@ python -c "$(curl -s $URL)" -s "param1" --boolparam
 ```
 This also works for R scripts
 `R -e "$(curl -s $URL)" -s "param1" --boolparam
+
+### Help
+I have tried to add brief, but complete help guides for each function.
+Function-specific help guides can be accessed using the -h or --help flag when running from the commandline.
+If documentation is lacking, please email me with the missing details of the function.
